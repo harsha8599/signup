@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align form in the center */
+    align-items: center;
+    width: 30%; /* Adjust as per requirement */
+}
+
+/* Centering the form on the page */
+#myform {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Removing gap between form elements */
+#myform label:first-of-type, 
+#myform input:first-of-type {
+    margin-top: 0;
+}
+
+.two h1 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(19, 32, 215);
+    text-decoration: underline 5px solid rgb(222, 237, 7);
+    margin-bottom: 0; /* Removes space under the h1 */
+}
+
+input[type="text"], [type="email"], [type="password"],[type="Confirm password"] {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px goldenrod;
+    padding: 1%;
+    margin-bottom: 1%;
+    width: 90%;
+}
+input[type="password"],[type="Confirm password"] {
+    box-shadow: 2px 4px 6px goldenrod; /* Custom shadow for Confirm Password */
+}
+
+.btn {
+    width: 100%;
+    border-radius: 10%;
+    font-size: 20px;
+    color: white;
+    background-color: lightblue;
+    border: 2px solid #174dac;
+    margin-bottom: 10%;
+}
+
+.btn:hover {
+    color: white;
+    background-color: blueviolet;
+    border: 1.5px solid gray;
+}
